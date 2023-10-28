@@ -1,0 +1,67 @@
+.header
+{
+margin: 12px;
+justify-content: center;
+background-color: grey; 
+}
+
+a
+{
+text-decoration: underline;
+}	
+
+a:hover
+{
+text-decoration: none;
+}	
+
+.main-catalog
+{
+margin-left: 12px;
+margin-right: 12px;
+
+
+}
+
+.promo-catalog
+{
+display: grid;
+grid-template-columns: 48% 48%;
+grid-column-gap: 20px;
+
+}
+
+.item
+{
+
+opacity: 100%;
+
+}
+
+.item:hover
+{
+opacity: 60%;
+}
+
+img
+{
+width: 100%;
+height: auto;
+}
+
+p
+{
+max-width: 100%;
+font-size: calc(1em + 1vw);
+overflow-wrap: break-word;
+}
+
+h1
+{
+font-size: calc(1em + 4vw);
+}
+
+h2
+{
+font-size: calc(1em + 4vw);
+}
