@@ -8,8 +8,82 @@
 <body>
 <script>
     // тут будет ваш код 
+
+    // Задание 1
     let apple = 10;
     console.log(apple);
+    alert(apple);
+    condition = '';
+    let chrs = 'abdehkmnpswxzABDEFGHKMNPQRSTWXZ123456789';
+    for (let i = 0; i < 36; i++) 
+        {
+            let pos = Math.floor(Math.random() * chrs.length);
+            condition += chrs.substring(pos,pos+1);
+        }
+    console.log("The good game is " + condition);
+
+    // Задание 2
+    let rndint = 2436;
+    let stringg = '100';
+    let bol = true;
+    console.log(rndint + bol)
+    console.log(bol  + stringg)
+    console.log(stringg  + rndint)
+    console.log(rndint  + stringg)
+    console.log(bol  + rndint)
+    console.log(stringg  + bol)
+
+    // Задание 3
+    let arre = [];
+    for (let i = 0; i < 10; i++)
+        {
+            arre[i] = Math.floor(Math.random() * (2000 + 2000)) - 2000;
+        }
+    console.log(arre.filter((INTeger) => INTeger > 0))
+
+    // Задание 4
+    function getRandomInt() 
+        {
+            return Math.floor(Math.random() * (2000 + 2000)) - 2000;
+        }
+    console.log(getRandomInt())
+    function getArrr(arr, intt) 
+        {
+            arrr = [];
+            for (let i = 0; i < arr.length ; i++)
+                {
+                arrr[i] = arr[i] * intt;
+                }
+            return arrr;
+        }
+    console.log(getArrr(arre.filter((INTeger) => INTeger > 0), -3))
+    const randd = () => {
+        conditionn = '';
+        let chrs = 'abdehkmnpswxzABDEFGHKMNPQRSTWXZ123456789';
+        for (let i = 0; i < 36; i++) 
+            {
+                let pos = Math.floor(Math.random() * chrs.length);
+                conditionn += chrs.substring(pos,pos+1);
+            }
+        console.log(conditionn);
+    }
+    randd();
+
+
+    // Задание 5
+    let exampleObject = {
+    firstName: "Y", 
+    surname: "E", 
+    patronymic: "S", 
+    birthday: "13 june", 
+    hobby: "N", 
+    group: "O"
+    printt: function()
+    {
+        return firstName + surname + patronymic + birthday + hobby + group;
+    }
+    }
+    alert(examleObject.printt())
 </script>
 </body>
 </html>
