@@ -72,18 +72,40 @@
 
     // Задание 5
     let exampleObject = {
-    firstName: "Y", 
-    surname: "E", 
-    patronymic: "S", 
-    birthday: "13 june", 
-    hobby: "N", 
-    group: "O"
-    printt: function()
+        firstName: "Y", 
+        surname: "E", 
+        patronymic: "S", 
+        birthday: "13 june", 
+        hobby: "N", 
+        group: "O",
+        printt: function()
+        {
+            return this.firstName + this.surname + this.patronymic + this.birthday + this.hobby + this.group;
+        }
+     }
+    alert(exampleObject.printt());
+    let salry = {
+    "Y": 123,
+    "E": 111,
+    "S": 222,
+    "N": 333,
+    "O": 123,
+    "S": 242,
+    "E": 436,
+    "Y": 764,
+    "O": 567,
+    "N": 567,
+    }
+    function Sal()
     {
-        return firstName + surname + patronymic + birthday + hobby + group;
+        Sum = 0;
+        for(let i in salry)
+        {
+            Sum+=salry[i];
+        }
+        return Sum;
     }
-    }
-    alert(examleObject.printt())
+    console.log(Sal())
 </script>
 </body>
 </html>
