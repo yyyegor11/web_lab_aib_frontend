@@ -125,10 +125,236 @@ DOM (Document Object Model) — это специальная древовидн
 
 Задание 5
 
-https://www.rgups.ru/services/time/?action=timetable&fac-id=1&course-id=3&group-id=26424&edu-type=internal
-Запрос POST
+https://www.rgups.ru/ajax/schedule.php?action=timetable&fac-id=1&course-id=3&group-id=26365&edu-type=internal
+Запрос GET
 Параметры запроса: action=timetable&fac-id=1&course-id=3&group-id=26424&edu-type=internal
 
-Конечная точка в контексте API (Application Programming Interface) это конкретный URL-адрес, ссылающийся на определенный ресурс. При взаимодействии с API конечные точки могут выполнять определенные действия, такие как запрос данных или запуск процесса.
+В теле ответа содержится: 
 
-Эндпоинт: https://www.rgups.ru/ajax/schedule.php
+<div class="schedule-section">
+					<div class="schedule-section-legend"><i></i> – в режиме видеоконференцсвязи</div>
+    		
+    <table class="table">             <tr>
+                <th class=" info" colspan="6">
+                    Понедельник                </th>
+            </tr>
+                      <tr>
+                        <td class="" >1</td>
+                        <td class="" >8.20-9.50</td>
+                        <td class="" >обе недели</td>
+                            <td class="">Военная подготовка ()</td>
+                            <td class=""> ..</td>
+                            <td class=""></td>
+                    </tr>
+                      <tr>
+                        <td class="" >2</td>
+                        <td class="" >10.05-11.35</td>
+                        <td class="" >обе недели</td>
+                            <td class="">Военная подготовка ()</td>
+                            <td class=""> ..</td>
+                            <td class=""></td>
+                    </tr>
+                      <tr>
+                        <td class="" >3</td>
+                        <td class="" >12.05-13.35</td>
+                        <td class="" >обе недели</td>
+                            <td class="">Военная подготовка ()</td>
+                            <td class=""> ..</td>
+                            <td class=""></td>
+                    </tr>
+                      <tr>
+                        <td class="" >4</td>
+                        <td class="" >13.50-15.20</td>
+                        <td class="" >обе недели</td>
+                            <td class="">Военная подготовка ()</td>
+                            <td class=""> ..</td>
+                            <td class=""></td>
+                    </tr>
+                      <tr>
+                        <td class="" >5</td>
+                        <td class="" >15.30-17.00</td>
+                        <td class="" >обе недели</td>
+                            <td class="">Военная подготовка ()</td>
+                            <td class=""> ..</td>
+                            <td class=""></td>
+                    </tr>
+
+            <tr>
+                <th class="" colspan="6">
+                    Вторник                </th>
+            </tr>
+                      <tr>
+                        <td class="" >2</td>
+                        <td class="" >10.05-11.35</td>
+                        <td class="" >обе недели</td>
+                            <td class="">Системы и технологии искусственного интеллекта (ЛЕК)</td>
+                            <td class="">МОСКАТ Н.А.</td>
+                            <td class="">Д404</td>
+                    </tr>
+                      <tr>
+                        <td class="" >3</td>
+                        <td class="" >12.05-13.35</td>
+                        <td class="" >обе недели</td>
+                            <td class="">Экономика и менеджмент (ПРАК)</td>
+                            <td class="">ТИМЧЕНКО О.В.</td>
+                            <td class="">С409</td>
+                    </tr>
+                      <tr>
+                        <td class="" >4</td>
+                        <td class="" >13.50-15.20</td>
+                        <td class="" >обе недели</td>
+                            <td class="">Схемотехника и архитектура вычислительных систем (ЛЕК)</td>
+                            <td class="">ЛЯЩЕНКО А.М.</td>
+                            <td class="">Г313</td>
+                    </tr>
+                      <tr>
+                        <td class="" >5</td>
+                        <td class="" >15.30-17.00</td>
+                        <td class="" >обе недели</td>
+                            <td class="">С¸ÑÑÐµÐ¼Ñ Ð¸ ÑÐµÑÐ½Ð¾Ð»Ð¾Ð³Ð¸Ð¸ Ð¸ÑÐºÑÑÑÑÐ²ÐµÐ½Ð½Ð¾Ð³Ð¾ Ð¸Ð½ÑÐµÐ»Ð»ÐµÐºÑÐ° (ÐÐÐ)</td>
+                            <td class="">ÐÐ£Ð ÐÐÐÐÐ Ð.Ð¡. [2]</td>
+                            <td class="">Ð305</td>
+                    </tr>
+
+            <tr>
+                <th class="" colspan="6">
+                    Ð¡ÑÐµÐ´Ð°                </th>
+            </tr>
+                      <tr>
+                        <td class="" >2</td>
+                        <td class="" >10.05-11.35</td>
+                        <td class="" >Ð¾Ð±Ðµ Ð½ÐµÐ´ÐµÐ»Ð¸</td>
+                            <td class="">Ð¡Ð¸ÑÑÐµÐ¼Ñ Ð¸ ÑÐµÑÐ½Ð¾Ð»Ð¾Ð³Ð¸Ð¸ Ð¸ÑÐºÑÑÑÑÐ²ÐµÐ½Ð½Ð¾Ð³Ð¾ Ð¸Ð½ÑÐµÐ»Ð»ÐµÐºÑÐ° (ÐÐÐ)</td>
+                            <td class="">ÐÐÐ¡ÐÐÐ¢ Ð.Ð. [1]</td>
+                            <td class="">Ð305</td>
+                    </tr>
+<!--4-->                      <tr>
+                        <td class="" rowspan="4">3</td>
+                        <td class="" rowspan="4">12.05-13.35</td>
+                        <td class="disable " >Ð½Ð°Ð´ ÑÐµÑÑÐ¾Ð¹</td>
+                                  
+                                <td class="disable ">ÐÐµÐ·Ð¾Ð¿Ð°ÑÐ½Ð¾ÑÑÑ Ð¶Ð¸Ð·Ð½ÐµÐ´ÐµÑÑÐµÐ»ÑÐ½Ð¾ÑÑÐ¸ (ÐÐÐ)</td>
+                                <td class="disable ">ÐÐÐ ÐÐÐÐ ÐÐÐ Ð.Ð.</td>
+                                <td class="disable ">Ð150</td>
+                        </tr>
+                        <tr>
+                            <td class=" " rowspan="3">Ð¿Ð¾Ð´ ÑÐµÑÑÐ¾Ð¹</td>
+                                <td class=" ">ÐÐµÐ·Ð¾Ð¿Ð°ÑÐ½Ð¾ÑÑÑ Ð¶Ð¸Ð·Ð½ÐµÐ´ÐµÑÑÐµÐ»ÑÐ½Ð¾ÑÑÐ¸ (ÐÐÐ)</td>
+                                <td class=" ">Ð¯ÐÐ¦ÐÐÐÐ Ð.Ð. [1]</td>
+                                <td class=" ">Ð152</td>
+</tr><tr>                                <td class=" ">ÐÐµÐ·Ð¾Ð¿Ð°ÑÐ½Ð¾ÑÑÑ Ð¶Ð¸Ð·Ð½ÐµÐ´ÐµÑÑÐµÐ»ÑÐ½Ð¾ÑÑÐ¸ (ÐÐÐ)</td>
+                                <td class=" ">ÐÐÐÐ£ÐÐ¬ÐÐÐÐÐÐ Ð.Ð. [2]</td>
+                                <td class=" ">Ð158</td>
+</tr><tr>                          </tr>
+                                       </tr>
+                      <tr>
+                        <td class="" >4</td>
+                        <td class="" >13.50-15.20</td>
+                        <td class="" >Ð¾Ð±Ðµ Ð½ÐµÐ´ÐµÐ»Ð¸</td>
+                            <td class="">ÐÐµÐ±-Ð¿ÑÐ¾Ð³ÑÐ°Ð¼Ð¼Ð¸ÑÐ¾Ð²Ð°Ð½Ð¸Ðµ (ÐÐÐ)</td>
+                            <td class="">ÐÐÐÐÐÐÐ Ð.Ð.</td>
+                            <td class="">Ð315</td>
+                    </tr>
+<!--5-->                      <tr>
+                        <td class="" rowspan="5">5</td>
+                        <td class="" rowspan="5">15.30-17.00</td>
+                        <td class="disable " rowspan="3">Ð½Ð°Ð´ ÑÐµÑÑÐ¾Ð¹</td>
+                                  
+                                <td class="disable ">ÐÐµÐ±-Ð¿ÑÐ¾Ð³ÑÐ°Ð¼Ð¼Ð¸ÑÐ¾Ð²Ð°Ð½Ð¸Ðµ (ÐÐÐ)</td>
+                                <td class="disable ">Ð¥Ð£Ð¡ÐÐÐÐÐ Ð.Ð . [2]</td>
+                                <td class="disable ">Ð412</td>
+</tr><tr>                                  
+                                <td class="disable ">ÐÐµÐ±-Ð¿ÑÐ¾Ð³ÑÐ°Ð¼Ð¼Ð¸ÑÐ¾Ð²Ð°Ð½Ð¸Ðµ (ÐÐÐ)</td>
+                                <td class="disable ">ÐÐÐÐÐÐÐ Ð.Ð. [1]</td>
+                                <td class="disable ">Ð302</td>
+</tr><tr>                        </tr>
+                        <tr>
+                            <td class=" " rowspan="3">Ð¿Ð¾Ð´ ÑÐµÑÑÐ¾Ð¹</td>
+                                <td class=" ">ÐÐµÐ±-Ð¿ÑÐ¾Ð³ÑÐ°Ð¼Ð¼Ð¸ÑÐ¾Ð²Ð°Ð½Ð¸Ðµ (ÐÐÐ)</td>
+                                <td class=" ">Ð¥Ð£Ð¡ÐÐÐÐÐ Ð.Ð . [2]</td>
+                                <td class=" ">Ð406</td>
+</tr><tr>                                <td class=" ">ÐÐµÐ±-Ð¿ÑÐ¾Ð³ÑÐ°Ð¼Ð¼Ð¸ÑÐ¾Ð²Ð°Ð½Ð¸Ðµ (ÐÐÐ)</td>
+                                <td class=" ">ÐÐÐÐÐÐÐ Ð.Ð. [1]</td>
+                                <td class=" ">Ð302</td>
+</tr><tr>                          </tr>
+                                       </tr>
+                      <tr>
+                        <td class="" rowspan="2">6</td>
+                        <td class="" rowspan="2">17.10-18.40</td>
+                        <td class="" rowspan="2">обе недели</td>
+                            <td class="">Системное программное обеспечение вычислительных систем (ЛАБ)</td>
+                            <td class="">МИЗЮКОВ Г.С. [1]</td>
+                            <td class="">Д407</td>
+</tr><tr>                            <td class="">Системное программное обеспечение вычислительных систем (ЛАБ)</td>
+                            <td class="">НИКИТЧЕНКО С.Л. [2]</td>
+                            <td class="">Д406</td>
+</tr><tr>                    </tr>
+
+            <tr>
+                <th class="" colspan="6">
+                    Четверг                </th>
+            </tr>
+<!--4-->                      <tr>
+                        <td class="" rowspan="4">1</td>
+                        <td class="" rowspan="4">8.20-9.50</td>
+                        <td class="disable " rowspan="3">над чертой</td>
+                                  
+                                <td class="disable ">Схемотехника и архитектура вычислительных систем (ЛАБ)</td>
+                                <td class="disable ">МИРОШНИКОВ А.М. [1]</td>
+                                <td class="disable ">Г303</td>
+</tr><tr>                                  
+                                <td class="disable ">Схемотехника и архитектура вычислительных систем (ЛАБ)</td>
+                                <td class="disable ">СОКИРКА А.Д. [2]</td>
+                                <td class="disable ">Г302</td>
+</tr><tr>                        </tr>
+                        <tr>
+                            <td class=" " >под чертой</td>
+                                <td class=" ">Безопасность жизнедеятельности (ПРАК)</td>
+                                <td class=" ">БАЛАНОВА М.В.</td>
+                                <td class=" ">М232</td>
+                          </tr>
+                                       </tr>
+                      <tr>
+                        <td class="" >2</td>
+                        <td class="" >10.05-11.35</td>
+                        <td class="" >обе недели</td>
+                            <td class="">Базы данных (ЛЕК)</td>
+                            <td class="">ИГНАТЬЕВА О.В.</td>
+                            <td class="">Г313</td>
+                    </tr>
+                      <tr>
+                        <td class="" rowspan="2">3</td>
+                        <td class="" rowspan="2">12.05-13.35</td>
+                        <td class="" rowspan="2">обе недели</td>
+                            <td class="">Базы данных (ЛАБ)</td>
+                            <td class="">МУКОНИНА М.И. [2]</td>
+                            <td class="">Г315</td>
+</tr><tr>                            <td class="">Базы данных (ЛАБ)</td>
+                            <td class="">ГАЛЬЦЕВА А.А. [1]</td>
+                            <td class="">Г315</td>
+</tr><tr>                    </tr>
+
+            <tr>
+                <th class="" colspan="6">
+                    Пятница (сегодня)                </th>
+            </tr>
+                      <tr>
+                        <td class="" >2</td>
+                        <td class="" >10.05-11.35</td>
+                        <td class="" >обе недели</td>
+                            <td class="">Экономика и менеджмент (ЛЕК)</td>
+                            <td class="">КАЛАШНИКОВ И.А.</td>
+                            <td class="">Д404</td>
+                    </tr>
+                      <tr>
+                        <td class="" >3</td>
+                        <td class="" >12.05-13.35</td>
+                        <td class="" >обе недели</td>
+                            <td class="">Системное программное обеспечение вычислительных систем (ЛЕК)</td>
+                            <td class="">ЖУКОВ В.В.</td>
+                            <td class="">Д404</td>
+                    </tr>
+
+</table></div>
+
+
