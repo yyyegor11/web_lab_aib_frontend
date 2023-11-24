@@ -13,7 +13,7 @@ elif input_text[0] == 'ascending':
 
 def Sequence(sum_medians, sub_sequence_length):
     b = input_text[:sub_sequence_length]
-    print(b)
+    b.sort()
     if len(b) % 2 == 1:
         if len(b) == 1:
             sum_medians += b[0]
@@ -21,7 +21,6 @@ def Sequence(sum_medians, sub_sequence_length):
             sum_medians +=  b[((len(b) + 1) // 2) - 1]
     elif len(b) % 2 == 0:
         sum_medians += b[(len(b) // 2) - 1]
-    print(sum_medians)
     sub_sequence_length += 1
     if sub_sequence_length > Count_numbers:
         return sum_medians
