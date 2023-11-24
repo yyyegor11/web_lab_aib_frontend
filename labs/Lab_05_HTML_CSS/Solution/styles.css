@@ -4,6 +4,7 @@
 margin: 12px;
 justify-content: center;
 background-color: grey; 
+overflow: hidden;
 }
 
 a
@@ -20,7 +21,6 @@ text-decoration: none;
 {
 margin-left: 12px;
 margin-right: 12px;
-max-width: 100%;
 overflow: hidden;
 
 }
@@ -30,7 +30,6 @@ overflow: hidden;
 display: grid;
 grid-template-columns: 48% 48%;
 grid-column-gap: 20px;
-max-width: 100%;
 overflow: hidden;
 }
 
@@ -71,12 +70,12 @@ font-size: calc(1em + 4vw);
 }
 
 
-@media screen and (min-width: 641px) and (max-width: 800px) 
+@media screen and (min-width: 641px) and (max-width: 3840px) 
 {
   .header
 {
 margin: 40px;
-
+overflow: hidden;
 }
 .menu
 {
