@@ -5,48 +5,50 @@
       console.log('equally')
     else
       console.log('not equally');
+     var1 += 'world';
+     console.log(var1)
 
 
     //Задача 2
-    var f = ['apple', 'strawberry', 'blueberry', 'raspberry', 'lemon']
+    var fruits = ['apple', 'strawberry', 'blueberry', 'raspberry', 'lemon']
     console.log(f.toString())
-    for(let i = 0; i < 5; i+=1)
-      if (f[i] === 'apple')
-        {
-        console.log('apple green')
-        }
-      else if (f[i] === 'strawberry')
-        {
-        console.log('strawberry red')
-        }
-      else if (f[i] === 'blueberry')
-        {
-        console.log('blueberry blue')
-        }
-      else if (f[i] === 'raspberry')
-        {
-        console.log('raspberry ligth red')
-        }
-      else if (f[i] === 'lemon')
-        {
-        console.log('lemon yellow')
+     switch (fruit) 
+     {
+            case 'apple':
+                console.log(`${fruit} green`);
+                break;
+            case 'strawberry':
+                console.log(`${fruit} red`);
+                break;
+            case 'blueberry':
+                console.log(`${fruit} blue`);
+                break;
+            case 'raspberry':
+                console.log(`${fruit} light red`);
+                break;
+            case 'lemon':
+                console.log(`${fruit} yellow`);
+                break;
+            default:
+                throw new Error('Fruit not found');
         }
 
     //Задача 3
-    function inputt(input_string)
+    function input_not_null(input_string)
       {
-      let valuee = undefined
+      let output_not_null_string = undefined
       while(true)
         {
         if(isNaN(parseFloat(c)))
-          valuee = prompt(input_string, undefined);
+          output_not_null_string = prompt(input_string, undefined);
+          alert('Ошибка! Строкане должна быть пустой.')
         else
           {
-          valuee = parseFloat(valuee);
+          output_not_null_string = parseFloat(output_not_null_string);
           break
           }
         }
-      return valuee;
+      return output_not_null_string;
       }
     let count_people = inputt('Введите кол-во человек ');
     let salary = inputt('Введите зарплату на человека ');
@@ -54,27 +56,33 @@
 
 
     //Задача 4
-    let Sum = 0;
-    let ploxieStudenti = [];
-    let klassSoStudentami = [{FIO:'Петров А.А.',Ocenka:5},
-    {FIO:'Иванов Б.Б.',Ocenka:3.4},{FIO:'Сидоров Г.Г.',Ocenka:9},
-    {FIO:'Немолодой Д.Д',Ocenka:2},{FIO:'Молодой Е.Е',Ocenka:3.4}];
-    for(let i = 0; i < 5; i++)
-      {
-      if((klassSoStudentami[i].Ocenka > klassSoStudentami.length) || (klassSoStudentami[i].Ocenka < 0))
-        console.log('Это значение учитываться не будет оно не соответствует допустимым значениям: '+ klassSoStudentami[i].FIO + klassSoStudentami[i].Ocenka);
-      else if ((klassSoStudentami[i].Ocenka <= 5) && (klassSoStudentami[i].Ocenka >= 4))
-        Sum += klassSoStudentami[i].Ocenka;
-      else if (klassSoStudentami[i].Ocenka < 4) 
-        {
-        Sum += klassSoStudentami[i].Ocenka;
-        ploxieStudenti.push(klassSoStudentami[i]);
-        }
-      }
-    Sum /= klassSoStudentami.length;
-    console.log('Средняя оценка: '+Sum);
-    console.log('Плохие студенты: ')
-    if(  ploxieStudenti.length === 0 ) 
-      console.log('Таких нет');
-    else
-      ploxieStudenti.forEach((znachenie)=>{console.log('Фио: '+znachenie.FIO+'; Оценка: '+znachenie.Ocenka)});
+       let badStudents = [];
+    let meanRate = [];
+    let students = [
+    {FIO:'Петров А.А.', rate:5},
+    {FIO:'Иванов Б.Б.', rate:3.4},
+    {FIO:'Сидоров Г.Г.', rate:9},
+    {FIO:'Немолодой Д.Д', rate:2},
+    {FIO:'Молодой Е.Е', rate:3.4}
+    ];
+     students.forEach(student => {
+        if (student.rate < 0 || student.rate > 5) return;
+
+        if (student.rate < 4) badStudents.push(student);
+
+        meanRate.push(student.rate);
+      })
+
+    console.log(`Средняя оценка: ${meanRate.reduce((a, b) => a + b) / meanRate.length}`);
+    console.log('Список плохих студентов:');
+
+    if (badStudents.length > 0) 
+    {
+        badStudents.forEach(student => {
+            console.log(`ФИО: ${student.FIO}, Оценка: ${student.rate}`);
+        })
+    } else 
+    {
+        console.log('Все студенты хорошие!');
+    }
+}
